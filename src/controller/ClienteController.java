@@ -6,8 +6,6 @@ import java.util.Scanner;
 
 public class ClienteController {
 
-    Scanner sc = new Scanner(System.in).useDelimiter("\n");
-
     public void listarClientes(Cliente[] clientes) {
         for (int i = 0; i < clientes.length; i++) {
             if (clientes[i] != null) {

@@ -19,47 +19,16 @@ public class Veiculo implements Comparable<Veiculo>{
         this.alugado = alugado;
     }
 
-    public Veiculo() {
-    }
-
     public String getMarca() {
         return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
     }
 
     public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
     public String getPlaca() {
         return placa;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
-
-    public int getValorDaDiaria() {
-        return valorDaDiaria;
-    }
-
-    public void setValorDaDiaria(int valorDaDiaria) {
-        this.valorDaDiaria = valorDaDiaria;
     }
 
     public boolean isAlugado() {
