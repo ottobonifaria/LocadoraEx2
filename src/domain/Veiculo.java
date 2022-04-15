@@ -72,11 +72,11 @@ public class Veiculo implements Comparable<Veiculo>{
 
     @Override
     public String toString() {
-        return  "(Marca: " + marca +")  "+
-                "(Modelo: " + modelo + ")  "+
-                "(Cor: " + cor + ")  " +
-                "(Placa: " + placa + ")  " +
-                "(Valor da Diária R$: " + valorDaDiaria ;
+        return  "Marca: " + marca +" | "+
+                "Modelo: " + modelo + " | "+
+                "Cor: " + cor + " | " +
+                "Placa: " + placa + " | " +
+                "Valor da Diária R$: " + valorDaDiaria ;
     }
 
     @Override

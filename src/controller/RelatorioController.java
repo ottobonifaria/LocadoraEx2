@@ -5,8 +5,10 @@ import domain.Relatorio;
 import domain.Veiculo;
 
 import java.util.Queue;
+import java.util.Stack;
 
 public class RelatorioController {
+    public static Stack<String> logEmprestimos = new Stack<>();
 
     public void imprimeHistorico(Veiculo[] veiculo, Cliente[] clientes, Relatorio[] relatorios, int contaHistorico) {
         for (int i = 0; i < contaHistorico; i++) {
@@ -23,12 +25,15 @@ public class RelatorioController {
         }
     }
 
-    public void imprimeFilaDeEspera(Queue<String> filaDeEspera,Cliente[] clientes){
+    public void imprimeFilaDeEspera(Queue<Cliente> filaDeEspera){
 
-        for (int i = 0 ;i<7 ;i++){
-            if(filaDeEspera.peek().equals(clientes[i].getNome()))
-                System.out.println(filaDeEspera.toString());
-            }
+        for(Cliente cliente: filaDeEspera){
+
+            System.out.println("Nome: " + cliente.getNome() + " Modelo: " + cliente.getVeiculoDesejado());
+
         }
+    }
+
+
 
 }
